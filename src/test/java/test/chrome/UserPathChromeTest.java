@@ -37,10 +37,11 @@ public class UserPathChromeTest {
 
     @BeforeAll
     public static void setUp() throws Exception {
-
-        //Для "--headless" режима раскомментировать и добавить options как аргумент
+ // Для Headless режима
 //        ChromeOptions chromeOptions = new ChromeOptions();
-//        chromeOptions.addArguments( "--headless");
+//        chromeOptions.addArguments("--headless");
+// И добавить аргумент "--headless",
+        
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
